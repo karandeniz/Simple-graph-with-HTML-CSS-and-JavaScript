@@ -34,4 +34,37 @@ If you haven't noticed or realized, underneath the graph are 3 buttons: day, wee
 
 (side note: like I said for month it changes depending on the month)
 
-So we gave them values sure but now we need to input them into the graph. How is that gonna work? Don't worry functions and forloops are here to save you.
+So we gave them values sure but now we need to input them into the graph. How is that gonna work? Don't worry functions and forloops are here to save you. This code will help you switch numbers depending on the "date". In the code it alos says Math.random, you can change that and just keep it as a number so it stays like that forever. In my job at CrowdCreate I used some const to make variables for the thing you bought.
+
+      for (let i = 0; i < days; i++) {
+             const date = new Date();
+        switch (interval) {
+          case 'day':
+            date.setHours(date.getHours() - i);
+            labels.unshift(date.toLocaleTimeString());
+            data.unshift(Math.floor(Math.random() * 100));
+            data2.unshift(Math.floor(Math.random() * 100));
+            break;
+          case 'week':
+            date.setDate(date.getDate() - i);
+            if (i < 7) {
+              labels.unshift(date.toDateString());
+              data.unshift(Math.floor(Math.random() * 100));
+              data2.unshift(Math.floor(Math.random() * 100));
+            }
+            break;
+          case 'month':
+            date.setDate(date.getDate() - i);
+            labels.unshift(date.toDateString());
+            data.unshift(Math.floor(Math.random() * 100));
+            data2.unshift(Math.floor(Math.random() * 100));
+            break;
+        }
+      }
+    }
+
+Now lets get to my favourite part :
+
+## Styling
+
+In my code I just use JavaScript to make it easier but you could use CSS if you would like. Now I didn't style my buttons since they aren't really important in this project but it still is there so you could just use some JS syntax like changeColor or if you want the hover feature onclick. But yeah here is the code.
