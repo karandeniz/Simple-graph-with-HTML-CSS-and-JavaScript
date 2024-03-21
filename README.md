@@ -67,4 +67,26 @@ Now lets get to my favourite part :
 
 ## Styling
 
-In my code I just use JavaScript to make it easier but you could use CSS if you would like. Now I didn't style my buttons since they aren't really important in this project but it still is there so you could just use some JS syntax like changeColor or if you want the hover feature onclick. But yeah here is the code.
+In my code I just use JavaScript to make it easier but you could use CSS if you would like. Now I didn't style my buttons since they aren't really important in this project but it still is there so you could just use some JS syntax like changeColor() or if you want the hover feature onclick. If you also look above the graph you can see Data1 and Data2. We can also change that to our likings by just changing the text. But yeah here is the code: 
+
+      const myChart = new Chart(ctx, {
+            type: 'line',
+            data: {
+            labels: labels,
+        datasets: [{
+          label: 'Price 2',
+          data: data,
+          borderColor: 'rgba(75, 192, 192, 1)', 
+          backgroundColor: 'rgba(75, 192, 192, 0.2)',
+          borderWidth: 1
+        }, {
+          label: 'Price 1',
+          data: data2,
+          borderColor: 'rgba(255, 99, 132, 1)',
+          backgroundColor: 'rgba(255, 99, 132, 0.2)',
+          borderWidth: 1
+        }]
+      }
+
+
+
