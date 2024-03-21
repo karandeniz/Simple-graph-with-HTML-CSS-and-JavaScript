@@ -67,7 +67,7 @@ Now lets get to my favourite part :
 
 ## Styling
 
-In my code I just use JavaScript to make it easier but you could use CSS if you would like. Now I didn't style my buttons since they aren't really important in this project but it still is there so you could just use some JS syntax like changeColor() or if you want the hover feature onclick. If you also look above the graph you can see Data1 and Data2. We can also change that to our likings by just changing the text. But yeah here is the code: 
+In my code I just use JavaScript to make it easier but you could use CSS if you would like. Now I didn't style my buttons since they aren't really important in this project but it still is there so you could just use some JS syntax like changeColor() or if you want the hover feature onclick. But yeah here is the code: 
 
       const myChart = new Chart(ctx, {
             type: 'line',
@@ -88,5 +88,6 @@ In my code I just use JavaScript to make it easier but you could use CSS if you 
         }]
       }
 
+Alright that is basically it about this code! With this similair JS code you can make different types of graphs too like circle graphs or block graphs. You can check for more detail inside of the code itself. Thank you for reading, bye👋
 
 
