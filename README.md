@@ -6,4 +6,10 @@ Hi! Welcome to this code. I will be explaining how the code functions. But what 
 
 Pretty cool right? Now lets get to the interesting part: How the code works.
 
-# System
+# Function
+
+The languages that the system is using is mostly JavaScript and of course HTML. Lets start with the complicated part of the code: 
+
+## The buttons
+
+If you haven't noticed or realized, underneath the graph are 3 buttons: day, week and month. In our JavaScript we need to give these buttons a function so they can work. But how? Well lets start of by giving them a value. A day has 24 hours so 24 dots, a week has 7 days so we input 7 buttons and depending on the month that many days.
