@@ -14,15 +14,15 @@ The languages that the system is using is mostly JavaScript and of course HTML. 
 
 If you haven't noticed or realized, underneath the graph are 3 buttons: day, week and month. In our JavaScript we need to give these buttons a function so they can work. But how? Well lets start of by giving them a value. A day has 24 hours so 24 dots, a week has 7 days so we input 7 buttons and depending on the month that many days.
 
-function generateData(interval) {
-      labels = [];
-      data = [];
-      data2 = [];
-      let days;
-      switch (interval) {
-        case 'day':
-          days = 24;
-          break;
+      function generateData(interval) {
+            labels = [];
+            data = [];
+            data2 = [];
+            let days;
+            switch (interval) {
+            case 'day':
+            days = 24;
+            break;
         case 'week':
           days = 7;
           break;
@@ -32,6 +32,6 @@ function generateData(interval) {
       }
 
 
-      (side note: like I said for month it changes depending on the month)
+(side note: like I said for month it changes depending on the month)
 
-So we gave them values sure but now we need to input them into the graph. How is that gonna work?
+So we gave them values sure but now we need to input them into the graph. How is that gonna work? Don't worry functions and forloops are here to save you.
