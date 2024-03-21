@@ -58,13 +58,13 @@ document.addEventListener("DOMContentLoaded", function() {
       data: {
         labels: labels,
         datasets: [{
-          label: 'Price 2',
+          label: 'Data 1',
           data: data,
           borderColor: 'rgba(75, 192, 192, 1)',
           backgroundColor: 'rgba(75, 192, 192, 0.2)',
           borderWidth: 1
         }, {
-          label: 'Price 1',
+          label: 'Data 2',
           data: data2,
           borderColor: 'rgba(255, 99, 132, 1)',
           backgroundColor: 'rgba(255, 99, 132, 0.2)',
